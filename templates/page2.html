@@ -1,3 +1,9 @@
 <div class="container">
-    <h2>Welcome to the real world</h2>
+    <h2>{{ title }}</h2>
+    <img src="/static/images/{{ image }}.jpg"/>
+    <h2>RGB image in JPEG format with width {{ width }} and height {{ height }}
+    </h2>
+    <a href="{{ url_for('home') }}">
+        Back to the list of images
+    </a>
 </div>
