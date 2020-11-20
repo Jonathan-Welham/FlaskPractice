@@ -3,9 +3,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
-    <img src="/static/images/{{ r1 }}.jpg" class="round w-50">
-    <img src="/static/images/{{ r2 }}.jpg" class="round w-50">
-    <img src="/static/images/{{ r3 }}.jpg" class="round w-50">
-
+    <a href="{{ url_for('page2') }}">
+       <img src="/static/images/{{ r1 }}.jpg" class="round w-50" onclick='{{ url_for('page2') }}' />
+    </a>
+    <a href="{{ url_for('page3') }}">
+       <img src="/static/images/{{ r2 }}.jpg" class="round w-50" onclick='{{ url_for('page3') }}' />
+    </a>
+    <a href="{{ url_for('page4') }}">
+       <img src="/static/images/{{ r3 }}.jpg" class="round w-50" onclick='{{ url_for('page4') }}' />
+    </a>
     </body>
 </html>
