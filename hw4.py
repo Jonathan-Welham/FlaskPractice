@@ -57,7 +57,6 @@ image_info = [
 ]
 class pic:
 
-
     def __init__(self, pos, id, title, flickU, tags):
         self.pos = pos
         self.id = image_info[pos]["id"]
