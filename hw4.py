@@ -1,3 +1,10 @@
+# Jonathan Welham
+# 11-20-2020
+# CST205
+# Instructor: Avner Biblarz
+# This program uses Flask to launch a webapp
+
+
 import numpy as np
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
