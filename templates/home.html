@@ -1,8 +1,10 @@
+
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
+    {% block content %}
     <a href="{{ url_for('page2') }}">
        <img src="/static/images/{{ r1 }}.jpg" class="round w-50" onclick='{{ url_for('page2') }}' />
     </a>
@@ -12,5 +14,6 @@
     <a href="{{ url_for('page4') }}">
        <img src="/static/images/{{ r3 }}.jpg" class="round w-50" onclick='{{ url_for('page4') }}' />
     </a>
-    </body>
+    {% endblock %}
+
 </html>
